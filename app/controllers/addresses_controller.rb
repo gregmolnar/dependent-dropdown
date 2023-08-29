@@ -28,7 +28,7 @@ class AddressesController < ApplicationController
         format.html { redirect_to address_url(@address), notice: "Address was successfully created." }
         format.json { render :show, status: :created, location: @address }
       else
-        format.html { render :new, status: :unprocessable_entity }
+        format.html { render :new, status: :unprocessable_entity, layout: !request.format.turbo_stream? }
         format.json { render json: @address.errors, status: :unprocessable_entity }
       end
     end
