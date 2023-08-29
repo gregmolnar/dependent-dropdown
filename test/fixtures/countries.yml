@@ -1,0 +1,505 @@
+# == Schema Information
+#
+# Table name: countries
+#
+#  id         :bigint           not null, primary key
+#  name       :string
+#  code       :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+---
+grenada:
+  name: Grenada
+georgia:
+  name: Georgia
+french_guiana:
+  name: French Guiana
+guernsey:
+  name: Guernsey
+ghana:
+  name: Ghana
+gibraltar:
+  name: Gibraltar
+greenland:
+  name: Greenland
+gambia:
+  name: Gambia
+guinea:
+  name: Guinea
+guadeloupe:
+  name: Guadeloupe
+equatorial_guinea:
+  name: Equatorial Guinea
+greece:
+  name: Greece
+south_georgia_and_the_south_sandwich_islands:
+  name: South Georgia and the South Sandwich Islands
+guatemala:
+  name: Guatemala
+guam:
+  name: Guam
+guinea-bissau:
+  name: Guinea-Bissau
+guyana:
+  name: Guyana
+hong_kong:
+  name: Hong Kong
+honduras:
+  name: Honduras
+croatia:
+  name: Croatia
+haiti:
+  name: Haiti
+hungary:
+  name: Hungary
+indonesia:
+  name: Indonesia
+ireland:
+  name: Ireland
+israel:
+  name: Israel
+isle_of_man:
+  name: Isle of Man
+india:
+  name: India
+british_indian_ocean_territory:
+  name: British Indian Ocean Territory
+iraq:
+  name: Iraq
+iran:
+  name: Iran
+iceland:
+  name: Iceland
+italy:
+  name: Italy
+jersey:
+  name: Jersey
+jamaica:
+  name: Jamaica
+jordan:
+  name: Jordan
+japan:
+  name: Japan
+kenya:
+  name: Kenya
+kyrgyzstan:
+  name: Kyrgyzstan
+cambodia:
+  name: Cambodia
+kiribati:
+  name: Kiribati
+comoros:
+  name: Comoros
+saint_kitts_and_nevis:
+  name: Saint Kitts and Nevis
+north_korea:
+  name: North Korea
+south_korea:
+  name: South Korea
+kuwait:
+  name: Kuwait
+cayman_islands:
+  name: Cayman Islands
+kazakhstan:
+  name: Kazakhstan
+laos:
+  name: Laos
+lebanon:
+  name: Lebanon
+saint_lucia:
+  name: Saint Lucia
+liechtenstein:
+  name: Liechtenstein
+sri_lanka:
+  name: Sri Lanka
+liberia:
+  name: Liberia
+lesotho:
+  name: Lesotho
+lithuania:
+  name: Lithuania
+luxembourg:
+  name: Luxembourg
+latvia:
+  name: Latvia
+libya:
+  name: Libya
+morocco:
+  name: Morocco
+monaco:
+  name: Monaco
+moldova:
+  name: Moldova
+montenegro:
+  name: Montenegro
+saint_martin:
+  name: Saint Martin
+madagascar:
+  name: Madagascar
+marshall_islands:
+  name: Marshall Islands
+north_macedonia:
+  name: North Macedonia
+mali:
+  name: Mali
+myanmar:
+  name: Myanmar
+mongolia:
+  name: Mongolia
+macao:
+  name: Macao
+northern_mariana_islands:
+  name: Northern Mariana Islands
+martinique:
+  name: Martinique
+mauritania:
+  name: Mauritania
+montserrat:
+  name: Montserrat
+malta:
+  name: Malta
+mauritius:
+  name: Mauritius
+maldives:
+  name: Maldives
+malawi:
+  name: Malawi
+mexico:
+  name: Mexico
+malaysia:
+  name: Malaysia
+mozambique:
+  name: Mozambique
+namibia:
+  name: Namibia
+new_caledonia:
+  name: New Caledonia
+niger:
+  name: Niger
+norfolk_island:
+  name: Norfolk Island
+nigeria:
+  name: Nigeria
+nicaragua:
+  name: Nicaragua
+netherlands:
+  name: Netherlands
+norway:
+  name: Norway
+nepal:
+  name: Nepal
+nauru:
+  name: Nauru
+niue:
+  name: Niue
+new_zealand:
+  name: New Zealand
+oman:
+  name: Oman
+panama:
+  name: Panama
+peru:
+  name: Peru
+french_polynesia:
+  name: French Polynesia
+papua_new_guinea:
+  name: Papua New Guinea
+philippines:
+  name: Philippines
+pakistan:
+  name: Pakistan
+poland:
+  name: Poland
+saint_pierre_and_miquelon:
+  name: Saint Pierre and Miquelon
+pitcairn:
+  name: Pitcairn
+puerto_rico:
+  name: Puerto Rico
+palestinian_territory:
+  name: Palestinian Territory
+portugal:
+  name: Portugal
+palau:
+  name: Palau
+paraguay:
+  name: Paraguay
+qatar:
+  name: Qatar
+reunion:
+  name: Reunion
+romania:
+  name: Romania
+serbia:
+  name: Serbia
+russia:
+  name: Russia
+rwanda:
+  name: Rwanda
+saudi_arabia:
+  name: Saudi Arabia
+solomon_islands:
+  name: Solomon Islands
+seychelles:
+  name: Seychelles
+sudan:
+  name: Sudan
+sweden:
+  name: Sweden
+singapore:
+  name: Singapore
+saint_helena:
+  name: Saint Helena
+slovenia:
+  name: Slovenia
+svalbard_and_jan_mayen:
+  name: Svalbard and Jan Mayen
+slovakia:
+  name: Slovakia
+sierra_leone:
+  name: Sierra Leone
+san_marino:
+  name: San Marino
+senegal:
+  name: Senegal
+somalia:
+  name: Somalia
+suriname:
+  name: Suriname
+south_sudan:
+  name: South Sudan
+sao_tome_and_principe:
+  name: Sao Tome and Principe
+el_salvador:
+  name: El Salvador
+sint_maarten:
+  name: Sint Maarten
+syria:
+  name: Syria
+eswatini:
+  name: Eswatini
+turks_and_caicos_islands:
+  name: Turks and Caicos Islands
+chad:
+  name: Chad
+french_southern_territories:
+  name: French Southern Territories
+togo:
+  name: Togo
+thailand:
+  name: Thailand
+tajikistan:
+  name: Tajikistan
+tokelau:
+  name: Tokelau
+timor_leste:
+  name: Timor Leste
+turkmenistan:
+  name: Turkmenistan
+tunisia:
+  name: Tunisia
+tonga:
+  name: Tonga
+turkey:
+  name: Turkey
+trinidad_and_tobago:
+  name: Trinidad and Tobago
+tuvalu:
+  name: Tuvalu
+taiwan:
+  name: Taiwan
+tanzania:
+  name: Tanzania
+ukraine:
+  name: Ukraine
+uganda:
+  name: Uganda
+united_states:
+  name: United States
+uruguay:
+  name: Uruguay
+uzbekistan:
+  name: Uzbekistan
+vatican:
+  name: Vatican
+saint_vincent_and_the_grenadines:
+  name: Saint Vincent and the Grenadines
+venezuela:
+  name: Venezuela
+british_virgin_islands:
+  name: British Virgin Islands
+u_s_virgin_islands:
+  name: U.S. Virgin Islands
+vietnam:
+  name: Vietnam
+vanuatu:
+  name: Vanuatu
+wallis_and_futuna:
+  name: Wallis and Futuna
+samoa:
+  name: Samoa
+kosovo:
+  name: Kosovo
+yemen:
+  name: Yemen
+mayotte:
+  name: Mayotte
+south_africa:
+  name: South Africa
+zambia:
+  name: Zambia
+zimbabwe:
+  name: Zimbabwe
+andorra:
+  name: Andorra
+united_arab_emirates:
+  name: United Arab Emirates
+afghanistan:
+  name: Afghanistan
+antigua_and_barbuda:
+  name: Antigua and Barbuda
+anguilla:
+  name: Anguilla
+albania:
+  name: Albania
+armenia:
+  name: Armenia
+angola:
+  name: Angola
+antarctica:
+  name: Antarctica
+argentina:
+  name: Argentina
+american_samoa:
+  name: American Samoa
+austria:
+  name: Austria
+australia:
+  name: Australia
+aruba:
+  name: Aruba
+aland_islands:
+  name: Aland Islands
+azerbaijan:
+  name: Azerbaijan
+bosnia_and_herzegovina:
+  name: Bosnia and Herzegovina
+barbados:
+  name: Barbados
+bangladesh:
+  name: Bangladesh
+belgium:
+  name: Belgium
+burkina_faso:
+  name: Burkina Faso
+bulgaria:
+  name: Bulgaria
+bahrain:
+  name: Bahrain
+burundi:
+  name: Burundi
+benin:
+  name: Benin
+saint_barthelemy:
+  name: Saint Barthelemy
+bermuda:
+  name: Bermuda
+brunei:
+  name: Brunei
+bolivia:
+  name: Bolivia
+bonaire_saint_eustatius_and_saba:
+  name: 'Bonaire, Saint Eustatius and Saba '
+brazil:
+  name: Brazil
+bahamas:
+  name: Bahamas
+bhutan:
+  name: Bhutan
+botswana:
+  name: Botswana
+belarus:
+  name: Belarus
+belize:
+  name: Belize
+canada:
+  name: Canada
+cocos_islands:
+  name: Cocos Islands
+democratic_republic_of_the_congo:
+  name: Democratic Republic of the Congo
+central_african_republic:
+  name: Central African Republic
+republic_of_the_congo:
+  name: Republic of the Congo
+switzerland:
+  name: Switzerland
+ivory_coast:
+  name: Ivory Coast
+cook_islands:
+  name: Cook Islands
+chile:
+  name: Chile
+cameroon:
+  name: Cameroon
+china:
+  name: China
+colombia:
+  name: Colombia
+costa_rica:
+  name: Costa Rica
+cuba:
+  name: Cuba
+cabo_verde:
+  name: Cabo Verde
+curacao:
+  name: Curacao
+christmas_island:
+  name: Christmas Island
+cyprus:
+  name: Cyprus
+czechia:
+  name: Czechia
+germany:
+  name: Germany
+djibouti:
+  name: Djibouti
+denmark:
+  name: Denmark
+dominica:
+  name: Dominica
+dominican_republic:
+  name: Dominican Republic
+algeria:
+  name: Algeria
+ecuador:
+  name: Ecuador
+estonia:
+  name: Estonia
+egypt:
+  name: Egypt
+western_sahara:
+  name: Western Sahara
+eritrea:
+  name: Eritrea
+spain:
+  name: Spain
+ethiopia:
+  name: Ethiopia
+finland:
+  name: Finland
+fiji:
+  name: Fiji
+falkland_islands:
+  name: Falkland Islands
+micronesia:
+  name: Micronesia
+faroe_islands:
+  name: Faroe Islands
+france:
+  name: France
+gabon:
+  name: Gabon
+united_kingdom:
+  name: United Kingdom
