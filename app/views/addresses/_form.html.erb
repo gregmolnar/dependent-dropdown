@@ -1,38 +1,37 @@
-<%= form_with(model: address) do |form| %>
-  <% if address.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(address.errors.count, "error") %> prohibited this address from being saved:</h2>
+<%= turbo_frame_tag 'address_turbo_frame' do %>
+  <%= form_with(model: address) do |form| %>
+    <% if address.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(address.errors.count, "error") %> prohibited this address from being saved:</h2>
 
-      <ul>
-        <% address.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <%= turbo_frame_tag 'address_turbo_frame' do %>
+        <ul>
+          <% address.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
     <div data-controller="dependent-dropdown">
       <%= form.label :country_id, style: "display: block" %>
-      <%= form.collection_select :country_id, Country.all, :id, :name, { prompt: "Select a country" }, 'data-action': 'change->dependent-dropdown#load'%>
-      <button data-turbo-frame="address_turbo_frame"data-dependent-dropdown-target="button">Select</button>
+      <%= form.collection_select :country_id, Country.all, :id, :name, { prompt: "Select a country" }, 'data-action': 'change->dependent-dropdown#load' %>
+      <button data-turbo-frame="address_turbo_frame" data-dependent-dropdown-target="button">Select</button>
     </div>
-    <div>
+    <div data-controller="dependent-dropdown">
       <%= form.label :state_id, style: "display: block" %>
-      <%= form.collection_select :state_id, address.country&.states || [], :id, :name, prompt: "Select a state" %>
+      <%= form.collection_select :state_id, address.country&.states || [], :id, :name, { prompt: "Select a state" }, 'data-action': 'change->dependent-dropdown#load' %>
+      <button data-turbo-frame="address_turbo_frame" data-dependent-dropdown-target="button">Select</button>
     </div>
-
     <div>
       <%= form.label :city_id, style: "display: block" %>
       <%= form.collection_select :city_id, address.state&.cities || [], :id, :name, prompt: "Select a city" %>
     </div>
-  <% end %>
-  <div>
-    <%= form.label :postcode, style: "display: block" %>
-    <%= form.text_field :postcode %>
-  </div>
+    <div>
+      <%= form.label :postcode, style: "display: block" %>
+      <%= form.text_field :postcode %>
+    </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
 <% end %>
